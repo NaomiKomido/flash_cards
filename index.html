@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+ <title>Meus Flashcards</title>
+</head>
+<body>
+ <h1>Flashcards de Estudo</h1>
+ 
+ <div class="flashcard" onclick="virarFlashcard(this)">
+   <div class="frente">
+     <p>Qual o hobbie favorito dos gatos?</p>
+   </div>
+   <div class="verso">
+     <p>Os hobbies podem ir de acordo com a personalidade de cada felino, mas arranhar, saltar e caçar são os mais relatados pelos tutores, por isso, a maior parte dos brinquedos foram desenvolvidos pensando nessas atividades mais comuns..</p>
+   </div>
+ </div>
+
+ <script> // solução por: SLK
+   function virarFlashcard(flashcard) {
+     const frente = flashcard.querySelector('.frente');
+     const verso = flashcard.querySelector('.verso');
+     if (frente.style.display === 'none') {
+       frente.style.display = 'block';
+       verso.style.display = 'none';
+     } else {
+       frente.style.display = 'none';
+       verso.style.display = 'block';
+     }
+   }
+ </script>
+</body>
+</html>

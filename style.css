@@ -1,0 +1,38 @@
+body {
+    background-image: url(gatoe.jpg);
+    background-size: 80% auto;
+    background-position: center;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    }
+    .flashcard {
+    background-color: #ffffff3b;
+    border: 2px solid #ccccccfd;
+    border-radius: 8px;
+    width: 350px;
+    height: 210px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    transition: transform 0.3s;
+    }
+    .flashcard:hover {
+    transform: scale(1.05);
+    }
+    .frente, .verso {
+    display: none;
+    width: 100%;
+    text-align: center;
+    }
+    .frente {
+    display: block;
+    }
+    
